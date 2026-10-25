@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        table {
+            width: 85%;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        .long-meeting {
+            background-color: #dbeafe;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Thứ Hai</td>
+                <td>08:00 - 09:00</td>
+                <td>Họp kế hoạch tuần</td>
+            </tr>
+
+            <tr>
+                <td>09:30 - 10:30</td>
+                <td>Họp phòng kinh doanh</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Thứ Ba</td>
+                <td>08:00 - 09:00</td>
+                <td>Họp nhóm phát triển</td>
+            </tr>
+
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Đánh giá tiến độ dự án</td>
+            </tr>
+
+            <tr>
+                <td>Thứ Tư</td>
+                <td colspan="2" class="long-meeting">
+                    08:00 - 12:00:
+                    Họp chiến lược công ty (4 giờ)
+                </td>
+            </tr>
+
+            <tr>
+                <td>Thứ Năm</td>
+                <td>14:00 - 15:00</td>
+                <td>Họp khách hàng</td>
+            </tr>
+
+            <tr>
+                <td>Thứ Sáu</td>
+                <td colspan="2" class="long-meeting">
+                    13:00 - 16:00:
+                    Tổng kết hoạt động tuần (3 giờ)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
